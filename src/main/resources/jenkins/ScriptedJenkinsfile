@@ -1,5 +1,6 @@
 node {
-tool name: 'Maven', type: 'maven'
+tool name: 'maven', type: 'maven'
+tool name: 'jdk', type: 'jdk'
     stage('checkout code') {
         checkout scm
     }
