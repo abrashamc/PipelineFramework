@@ -9,7 +9,9 @@ tool name: 'jdk', type: 'jdk'
     }
     stage('Test') {
         echo 'Testing...'
+        withMvn(jdk: 'jdk') {
         sh 'mvn test'
+        }
     }
     stage('Deploy') {
         echo 'Deploying...'
