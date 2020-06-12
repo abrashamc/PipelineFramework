@@ -7,7 +7,6 @@ node {
     }
     stage('Test') {
         echo 'Testing...'
-        mvn test
     }
     stage('Deploy') {
         echo 'Deploying...'
