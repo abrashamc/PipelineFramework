@@ -1,4 +1,5 @@
 node {
+tool name: 'Maven', type: 'maven'
     stage('checkout code') {
         checkout scm
     }
