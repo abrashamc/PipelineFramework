@@ -5,12 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                //archiveArtifacts artifacts: '**/reports/HarReport/*.har', fingerprint: true
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
+                pwd
                 mvn test
                 }
         }
