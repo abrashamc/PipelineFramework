@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f31e1712-9d0f-40fb-b074-13c2385daa65" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jenkins/Declarative/Jenkinsfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jenkins/Scripted/Jenkinsfile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile" afterPath="$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -354,7 +350,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
