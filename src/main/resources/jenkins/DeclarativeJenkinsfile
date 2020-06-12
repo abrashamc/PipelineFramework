@@ -12,12 +12,15 @@ pipeline {
                     echo "PATH = ${PATH}"
                     echo ""M2_HOME = ${M2_HOME}
                     '''
+                     mvnHome = tool 'maven'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'mvn test'
+                    withEnv([MVN_HOME=$mvnHome]){
+                         sh 'mvn test'
+                    }
                 }
         }
         stage('Deploy') {
