@@ -8,7 +8,7 @@ node {
     stage('Test') {
         echo 'Testing...'
         pwd
-        mvn test
+        //mvn test
     }
     stage('Deploy') {
         echo 'Deploying...'
