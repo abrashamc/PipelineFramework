@@ -10,8 +10,7 @@ node {
     }
     stage('Test') {
         withEnv(["JAVA_HOME=${ tool 'jdk' }","PATH+MAVEN=${tool 'maven'}/bin"]) {
-        def process = "Testing"
-            echo "${process}..."
+            echo "Testing..."
                 sh 'mvn test'
             }
     }
