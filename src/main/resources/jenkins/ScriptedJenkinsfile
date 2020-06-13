@@ -1,12 +1,12 @@
 node {
+
+    echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+
     stage('checkout code') {
         checkout scm
     }
     stage('Build') {
         echo 'Building...'
-    }
-    stage('Build info') {
-        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
     }
     stage('Test') {
         def process = "Testing"
