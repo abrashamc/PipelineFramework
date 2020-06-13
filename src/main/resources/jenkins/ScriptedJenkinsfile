@@ -22,16 +22,7 @@ node {
             junit '**/target/surefire-reports/*.xml'
         }
     }
-    stage('Deploy to mac') {
-        agent {
-            label 'master-mac'
-        }
-        echo 'Deploying to mac...'
+    stage('Deploy') {
+        echo 'Deploying...'
     }
-    stage('Deploy to slave 1') {
-            agent {
-                label 'slave 1'
-            }
-            echo 'Deploying to slave 1...'
-        }
 }
