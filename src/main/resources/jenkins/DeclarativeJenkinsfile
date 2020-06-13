@@ -12,16 +12,19 @@ pipeline {
     }
 
     stages {
+
         stage('Welcome') {
             steps {
-                echo "${params.Greetings} World!"
+                echo "${params.Greetings} World! Starting test..."
                  }
             }
+
         stage('Build info') {
             steps {
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                echo "Running build#${env.BUILD_ID} on ${env.JENKINS_URL}"
                     }
             }
+
         stage('Build') {
             steps {
                 echo 'Building...'
@@ -31,16 +34,19 @@ pipeline {
                     '''
             }
         }
+
         stage('Test') {
             steps {
                 echo 'Testing...'
                     sh 'mvn test'
                 }
-        }
+
+
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
             }
         }
+
     }
 }

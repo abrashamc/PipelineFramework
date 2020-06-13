@@ -2,6 +2,10 @@ node {
 
     echo "Running build#${env.BUILD_ID} on ${env.JENKINS_URL}"
 
+    properties([parameters([name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?'])])
+
+    echo "${params.Greetings} World! Starting test..."
+
     stage('checkout code') {
         checkout scm
     }
