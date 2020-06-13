@@ -2,7 +2,7 @@ node {
 
     echo "Running build#${env.BUILD_ID} on ${env.JENKINS_URL}"
 
-properties([parameters([string(defaultValue: 'Hello', description: 'How should I greet the world?', name: 'Greeting')])])
+    properties([parameters([string(defaultValue: 'Hello', description: 'How should I greet the world?', name: 'Greeting')])])
     echo "${params.Greetings} World! Starting test..."
 
     stage('checkout code') {
@@ -17,6 +17,7 @@ properties([parameters([string(defaultValue: 'Hello', description: 'How should I
                 echo "Testing..."
                     sh 'mvn test'
                 }
+            }
         finally {
             junit '**/target/surefire-reports/*.xml''
         }
