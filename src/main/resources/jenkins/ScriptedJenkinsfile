@@ -18,7 +18,7 @@ properties([parameters([string(defaultValue: 'Hello', description: 'How should I
                     sh 'mvn test'
                 }
         finally {
-        junit '**/target/*.xml''
+            junit '**/target/surefire-reports/*.xml''
         }
     }
     stage('Deploy') {
