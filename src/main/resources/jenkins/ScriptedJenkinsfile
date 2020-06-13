@@ -2,9 +2,9 @@ node {
 
     echo "Running build#${env.BUILD_ID} on ${env.JENKINS_URL}"
 
-    properties([parameters([string(defaultValue: 'Hello', description: 'How should I greet the world?', name: 'Greeting')])])
+    properties([parameters([string(defaultValue: 'Hello', description: 'How should I greet the world?', name: 'Greetings')])])
     echo "${params.Greetings} World! Starting test..."
-    
+
     stage('checkout code') {
         checkout scm
     }
@@ -23,6 +23,8 @@ node {
         }
     }
     stage('Deploy') {
-        echo 'Deploying...'
+        node('master-mac') {
+            echo 'Deploying...'
+        }
     }
 }
