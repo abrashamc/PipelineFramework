@@ -41,13 +41,17 @@ pipeline {
                 agent {
                     label 'master-mac'
                 }
-                echo 'Deploying to mac...'
+                steps {
+                     echo 'Deploying to mac...'
+                }
             }
        stage('Deploy to slave 1') {
                 agent {
                      label 'slave 1'
                  }
-               echo 'Deploying to slave 1...'
+                steps {
+                    echo 'Deploying to slave 1...'
+               }
            }
     }
 
