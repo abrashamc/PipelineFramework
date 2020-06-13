@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f31e1712-9d0f-40fb-b074-13c2385daa65" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile" afterPath="$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile" afterPath="$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DeclarativeJenkinsfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeclarativeJenkinsfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptedJenkinsfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScriptedJenkinsfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="209">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/src/test/java/main/java/SampleUnitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/main/java/unit/SampleUnitTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile" />
         <option value="$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile" />
+        <option value="$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile" />
       </list>
     </option>
   </component>
@@ -559,18 +559,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>

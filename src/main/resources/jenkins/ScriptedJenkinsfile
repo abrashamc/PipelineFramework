@@ -9,7 +9,7 @@ node {
     stage('Test') {
         echo 'Testing...'
           withEnv([MVN_HOME=$mvnHome]) {
-            ssh 'mvn test'
+            sh 'mvn test'
     }
     }
     stage('Deploy') {
