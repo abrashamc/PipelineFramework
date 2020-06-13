@@ -50,6 +50,7 @@ pipeline {
             }
         failure {
             //mail to: abrasham.chowdhury@disneystreaming.com, subect: 'The Pipeline failed :('
+            echo "Pipeline failed :("
         }
     }
 }
