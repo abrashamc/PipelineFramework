@@ -9,7 +9,7 @@ node {
         echo 'Building...'
     }
     stage('Test') {
-        withEnv(['M2_HOME=/usr/local/Cellar/maven/3.5.2/libexec/bin']) {
+        withEnv(["M2_HOME=${tool 'maven'}/bin"]) {
         def process = "Testing"
             echo "${process}..."
                 sh 'mvn test'
