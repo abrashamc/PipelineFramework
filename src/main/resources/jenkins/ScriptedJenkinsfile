@@ -9,8 +9,11 @@ node {
         echo 'Building...'
     }
     stage('Test') {
+        withEnv([PATH+MAVEN=${tool 'maven'}/bin]) {
         def process = "Testing"
             echo "${process}..."
+                sh 'mvn test'
+            }
     }
     stage('Deploy') {
         echo 'Deploying...'
