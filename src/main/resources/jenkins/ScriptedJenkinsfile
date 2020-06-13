@@ -1,17 +1,16 @@
 node {
-tool name: 'maven', type: 'maven'
-tool name: 'jdk', type: 'jdk'
     stage('checkout code') {
         checkout scm
     }
     stage('Build') {
         echo 'Building...'
+        mvnHome = tool 'maven'
     }
     stage('Test') {
         echo 'Testing...'
-        maven {
-        sh 'mvn test'
-        }
+          withEnv([MVN_HOME=$mvnHome]) {
+            ssh 'mvn test'
+    }
     }
     stage('Deploy') {
         echo 'Deploying...'
