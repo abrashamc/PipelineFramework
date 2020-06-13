@@ -6,9 +6,11 @@ pipeline {
             maven 'maven'
             jdk 'jdk'
         }
+
     parameters {
     string (name: 'Greetings', defaultValue: 'Hello', description: 'How should I greet the world?')
     }
+
     stages {
      stage('Welcome') {
      echo "${params.Greetings} World!"
