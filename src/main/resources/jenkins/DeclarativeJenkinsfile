@@ -20,6 +20,8 @@ pipeline {
                 echo 'Testing...'
                     withEnv([MVN_HOME=$mvnHome]){
                          sh 'mvn test'
+                         def testStatus = "Done"
+                         echo "Test Status: ${testStatus}"
                     }
                 }
         }
