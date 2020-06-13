@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                    withEnv([MVN_HOME=$mvnHome]){
+                    withEnv([MVN_HOME=$mvnHome]) {
                          sh 'mvn test'
                          def testStatus = "Done"
                          echo "Test Status: ${testStatus}"
