@@ -12,19 +12,16 @@ pipeline {
     }
 
     stages {
-
         stage('Welcome') {
             steps {
                 echo "${params.Greetings} World! Starting test..."
                  }
             }
-
         stage('Build info') {
             steps {
                 echo "Running build#${env.BUILD_ID} on ${env.JENKINS_URL}"
                     }
             }
-
         stage('Build') {
             steps {
                 echo 'Building...'
@@ -34,19 +31,26 @@ pipeline {
                     '''
             }
         }
-
         stage('Test') {
             steps {
                 echo 'Testing...'
                     sh 'mvn test'
                 }
-
-
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
             }
         }
+    }
 
+    post {
+        always {
+                junit '**/target/*.xml'
+            }
+        }
+        failure {
+            mail to: abrasham.chowdhury@disneystreaming.com, subect: 'The Pipeline failed :('
+        }
     }
 }

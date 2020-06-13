@@ -12,10 +12,14 @@ properties([parameters([string(defaultValue: 'Hello', description: 'How should I
         echo 'Building...'
     }
     stage('Test') {
-        withEnv(["JAVA_HOME=${ tool 'jdk' }","PATH+MAVEN=${tool 'maven'}/bin"]) {
-            echo "Testing..."
-                sh 'mvn test'
-            }
+        try {
+            withEnv(["JAVA_HOME=${ tool 'jdk' }","PATH+MAVEN=${tool 'maven'}/bin"]) {
+                echo "Testing..."
+                    sh 'mvn test'
+                }
+        finally {
+        junit '**/target/*.xml''
+        }
     }
     stage('Deploy') {
         echo 'Deploying...'
