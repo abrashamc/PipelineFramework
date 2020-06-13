@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f31e1712-9d0f-40fb-b074-13c2385daa65" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile" afterPath="$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile" afterPath="$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="DeclarativeJenkinsfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="133">
+              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -559,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/DeclarativeJenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        <state relative-caret-position="133">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding />
         </state>
       </provider>

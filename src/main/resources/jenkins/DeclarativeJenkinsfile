@@ -6,12 +6,6 @@ pipeline {
             maven 'maven'
             jdk 'jdk'
         }
-    environment {
-        EXIT_STATUS = """${sh(
-                         returnStatus: true,
-                         script: 'exit 1'
-                     ]}"""
-    }
     parameters {
     string (name: 'Greetings', defaultValue: 'Hello', description: 'How should I greet the world?')
     }
