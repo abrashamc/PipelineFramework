@@ -28,8 +28,8 @@
       <file leaf-file-name="ScriptedJenkinsfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="114">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -614,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jenkins/ScriptedJenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="114">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>

@@ -4,11 +4,10 @@ node {
 
     properties([parameters([string(defaultValue: 'Hello', description: 'How should I greet the world?', name: 'Greeting')])])
     echo "${params.Greetings} World! Starting test..."
-    /*
+    
     stage('checkout code') {
         checkout scm
     }
-    */
     stage('Build') {
         echo 'Building...'
     }
