@@ -5,9 +5,12 @@ node {
     stage('Build') {
         echo 'Building...'
     }
+    stage('Build info') {
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+    }
     stage('Test') {
-    def process = "Testing"
-        echo "${process}..."
+        def process = "Testing"
+            echo "${process}..."
     }
     stage('Deploy') {
         echo 'Deploying...'
